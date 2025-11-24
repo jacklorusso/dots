@@ -1,0 +1,4 @@
+mozilla/**
+BraveSoftware/**
+inkscape/**
+!inkscape/preferences.xml
