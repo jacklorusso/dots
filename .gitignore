@@ -1,4 +1,8 @@
+pnpm/**
 mozilla/**
 BraveSoftware/**
+# Keep inkscape preferences (theme, icons, etc) and nothing else
 inkscape/**
 !inkscape/preferences.xml
+# i don't really know what this is
+dconf/**
