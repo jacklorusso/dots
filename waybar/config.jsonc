@@ -20,8 +20,6 @@
         "memory",
         "temperature",
         "backlight",
-        "keyboard-state",
-        "hyprland/language",
         "battery",
         "clock",
         "tray",
@@ -35,7 +33,7 @@
 	"format": "{icon}",
 	"format-icons": {
 		"urgent": "",
-    		"focused": "",
+    		"active": "",
 		"default": ""
          }
     },
