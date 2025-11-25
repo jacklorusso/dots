@@ -1,6 +1,8 @@
 pnpm/**
 mozilla/**
 BraveSoftware/**
+zsh/.zshrc/ohmyzsh/**
+*zcompdump*
 # Keep inkscape preferences (theme, icons, etc) and nothing else
 inkscape/**
 !inkscape/preferences.xml
