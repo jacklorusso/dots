@@ -3,4 +3,5 @@ font-size = 9
 clipboard-read = allow
 clipboard-write = allow
 window-padding-y = 0
-window-padding-x = 8
+window-padding-x = 6
+
