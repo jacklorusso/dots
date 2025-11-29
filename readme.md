@@ -6,14 +6,15 @@ For the last 12 years all my devices have followed a Pokemon naming scheme. This
 
 ### choices
 
-os: arch linux
-window manager: hyprland
-terminal: ghostty
-browser: brave
-status bar: waybar
-editor: neovim
+- os: arch linux
+- window manager: hyprland
+- terminal: ghostty
+- status bar: waybar
+- editor: neovim
+- browser: brave
+- wallpaper: hyprpaper
+- screenshot: hyprshot
 
-### todo
+### screenshots
 
-- get screenshots
 
