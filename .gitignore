@@ -1,5 +1,4 @@
 pnpm/**
-mozilla/**
 BraveSoftware/**
 zsh/.zshrc/ohmyzsh/**
 *zcompdump*
@@ -8,3 +7,9 @@ inkscape/**
 !inkscape/preferences.xml
 # i don't really know what this is
 dconf/**
+
+# nvim
+nvim/tags
+nvim/tests.sh
+.luarc.json
+spell/
