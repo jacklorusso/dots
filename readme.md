@@ -1,8 +1,19 @@
 ## dots
 
-WIP config files + todo list for a fresh arch install
+Config files for my first Linux machine, a revived ThinkPad X1 Carbon.
 
-## TODO
+For the last 12 years all my devices have followed a Pokemon naming scheme. This one is called `rotom`.
 
-- test bluetooth
-- kickstart nvim
+### choices
+
+os: arch linux
+window manager: hyprland
+terminal: ghostty
+browser: brave
+status bar: waybar
+editor: neovim
+
+### todo
+
+- get screenshots
+
