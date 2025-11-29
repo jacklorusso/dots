@@ -13,7 +13,7 @@ Config files for my first Linux machine, a revived ThinkPad X1 Carbon.
 - wallpaper: hyprpaper
 - screenshot: hyprshot
 
-## rotom
+### rotom
 
 For the last 12 years all my devices have followed a Pokemon naming scheme.
 This one is called `rotom`. the ghost in the machine. ghostty in the shell.
