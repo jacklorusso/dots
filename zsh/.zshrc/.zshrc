@@ -8,6 +8,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 export EDITOR='nvim'
+export HYPRSHOT_DIR="$HOME/screenshots"
 
 alias sz="source $ZDOTDIR/.zshrc"
 alias v="nvim"
