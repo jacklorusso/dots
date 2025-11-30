@@ -693,7 +693,13 @@ require('lazy').setup({
         -- clangd = {},
         -- gopls = {},
         -- pyright = {},
-        -- rust_analyzer = {},
+        rust_analyzer = {
+          ['rust-analyzer'] = {
+            checkOnSave = {
+              command = 'clippy',
+            },
+          },
+        },
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -702,6 +708,16 @@ require('lazy').setup({
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         -- ts_ls = {},
         --
+        ts_ls = {
+          root_dir = require('lspconfig').util.root_pattern { 'package.json', 'tsconfig.json' },
+          single_file_support = false,
+          settings = {},
+        },
+        denols = {
+          root_dir = require('lspconfig').util.root_pattern { 'deno.json', 'deno.jsonc' },
+          single_file_support = false,
+          settings = {},
+        },
 
         lua_ls = {
           -- cmd = { ... },
