@@ -286,25 +286,20 @@ require('lazy').setup({
 
   -- COLOR THEME
   {
-    'bluz71/vim-moonfly-colors',
-    name = 'moonfly',
-    lazy = false, -- load immediately
-    priority = 1000, -- make sure colorscheme is loaded first
+    'projekt0n/github-nvim-theme',
+    name = 'github-theme',
+    lazy = false, -- make sure we load this during startup if it is your main colorscheme
+    priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
-      -- optional settings (see plugin README)
-      vim.g.moonflyCursorColor = true
-      vim.g.moonflyItalics = false
-      vim.g.moonflyTransparent = false
-
-      -- apply the colorscheme
-      vim.cmd 'colorscheme moonfly'
-
-      -- override backgrounds to pure black
-      local pure_black = { bg = '#000000' }
-      vim.api.nvim_set_hl(0, 'Normal', pure_black)
-      vim.api.nvim_set_hl(0, 'NormalFloat', pure_black)
-      vim.api.nvim_set_hl(0, 'SignColumn', pure_black)
-      vim.api.nvim_set_hl(0, 'LineNr', pure_black)
+      require('github-theme').setup {
+        options = {
+          transparent = true, -- Disable setting bg (make neovim's background transparent)
+          styles = {
+            comments = 'italic',
+          },
+        },
+      }
+      vim.cmd 'colorscheme github_dark_dimmed'
     end,
   },
 
