@@ -1,7 +1,7 @@
 ## oh my zsh ##
 export ZSH="$ZDOTDIR/ohmyzsh"
 ZSH_THEME="steeef"
-plugins=(git)
+plugins=(git asdf)
 source $ZSH/oh-my-zsh.sh
 
 ## env vars ##
@@ -21,3 +21,4 @@ alias ga="git add"
 alias gcm="git commit -m"
 alias gca="git commit -a"
 
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
