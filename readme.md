@@ -12,6 +12,7 @@ Config files for my first Linux machine, a revived ThinkPad X1 Carbon.
 - browser: brave
 - wallpaper: hyprpaper
 - screenshot: hyprshot
+- lock: hyprlock + hyperidle
 
 ### rotom
 
