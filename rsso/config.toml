@@ -1,0 +1,2 @@
+default_limit = 20
+refresh_age_mins = 60
