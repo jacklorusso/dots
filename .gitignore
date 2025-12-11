@@ -14,3 +14,8 @@ nvim/tags
 nvim/tests.sh
 .luarc.json
 spell/
+
+# spotatui
+spotatui/streaming_cache/**
+spotatui/.spotify_token_cache.json
+client.yml
