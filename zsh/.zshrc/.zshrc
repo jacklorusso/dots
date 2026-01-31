@@ -25,3 +25,12 @@ alias gca="git commit -a"
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 # cargo
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# yazi file manager - y to launch, q to quit to cwd in yazi, Q to quit to prev cwd
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	command yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}

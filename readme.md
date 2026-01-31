@@ -7,6 +7,7 @@ Config files for my first Linux machine, a revived ThinkPad X1 Carbon.
 - os: arch linux
 - window manager: hyprland
 - terminal: ghostty
+- file manager (tui): yazi
 - status bar: waybar
 - editor: neovim
 - browser: brave
